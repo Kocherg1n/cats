@@ -1,0 +1,45 @@
+.hamburger {
+    cursor: pointer;
+    width: 48px;
+    height: 30px;
+    position: relative;
+
+    &__icon {
+        width: 48px;
+        height: 4px;
+        background-color: #000000;
+        position: absolute;
+        border-radius: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::after {
+            content: "";
+            background-color: #000000;
+            display: block;
+            position: absolute;
+            width: 28px;
+            height: 4px;
+            top: 9px;
+            right: 0;
+            border-radius: 5px;
+        }
+
+
+        &::before {
+            content: "";
+            background-color: #000000;
+            display: block;
+            position: absolute;
+            width: 48px;
+            height: 4px;
+            bottom: 9px;
+            right: 0;
+            border-radius: 5px;
+        }
+
+        &__link {
+            cursor: pointer;
+        }
+    }
+}

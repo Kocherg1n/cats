@@ -1,0 +1,27 @@
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 30px;
+
+        @include media-tablet {
+            margin-right: 15px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        color: #1a212f;
+
+        &:hover {
+            color: #f05b1b;
+            transition: 0.2s;
+        }
+    }
+}

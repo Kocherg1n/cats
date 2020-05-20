@@ -1,0 +1,202 @@
+.catalog {
+    position: relative;
+
+  &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+
+      @include media-phone {
+          margin-left: 0;
+      }
+  }
+
+  &__item {
+      border-radius: 6px;
+      overflow: hidden;
+      min-width: 270px;
+      margin-bottom: 30px;
+      width: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      transition: .2s;
+
+    &:hover {
+        box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.15);
+        transform: scale(1.01);
+        transition: .3s;
+    }
+
+    @include media-laptop {
+        flex: 1;
+        min-width: 239px;
+    }
+
+    @include media-tablet {
+        flex: 1;
+        min-width: 239px;
+        width: 239px;
+    }
+
+    @include media-phone {
+        width: 100%;
+        margin-left: 0;
+    }
+  }
+
+  &__pic1 {
+      background-image: url("../img/cat1.jpg");
+  }
+
+  &__pic2 {
+      background-image: url("../img/cat2.jpg");
+  }
+
+  &__pic3 {
+      background-image: url("../img/cat3.jpg");
+  }
+
+  &__pic4 {
+      background-image: url("../img/cat4.jpg");
+  }
+
+  &__pic5 {
+      background-image: url("../img/cat5.jpg");
+  }
+
+  &__pic6 {
+      background-image: url("../img/cat6.jpg");
+  }
+
+  &__pic {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-width: 100%;
+      min-height: 185px;
+  }
+
+  &__desc-list {
+      padding: 25px 10px 25px 20px;
+      background: #FFFFFF;
+      border-left: 1px solid #E1E1E1;
+      border-right: 1px solid #E1E1E1;
+      border-bottom: 1px solid #E1E1E1;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+
+      @include media-tablet {
+          padding: 20px 8px 20px 15px;
+      }
+  }
+
+  &__desc-item {
+      margin-top: 18px;
+      font-size: 14px;
+
+      &:first-child {
+          margin-top: 0;
+      }
+  }
+
+  &__desc-item span {
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 10px;
+  }
+
+  &__title {
+      font-size: 20px;
+      font-family: $titleFont;
+      font-weight: 500;
+  }
+
+  &__equipment-box {
+      display: flex;
+      align-items: center;
+  }
+
+  &__button {
+      background: #FF7236;
+      border-radius: 25px;
+      width: 230px;
+      height: 46px;
+      color: #FFFFFF;
+      margin-top: 25px;
+      font-size: 14px;
+      font-family: $mainFont;
+      position: relative;
+      padding-right: 36px;
+      transition: .2s;
+
+    &:hover {
+        background: #F05B1B;
+        transition: .2s;
+    }
+
+    &:hover .catalog__button-icon {
+        transition: .2s;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+      @include media-laptop {
+          width: 100%;
+          padding-right: 0;
+      }
+  }
+
+  &__button-icon {
+      position: absolute;
+      height: 34px;
+      width: 34px;
+      background: #FFFFFF;
+      right: 6px;
+      top: 50%;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+          content: '';
+          background: url("../img/paw.svg") no-repeat;
+          width: 21px;
+          height: 18px;
+      }
+  }
+
+  &__icon-not {
+      background: url("../img/not.svg") no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+  }
+
+  &__icon-sunbed {
+      background: url("../img/sunbed.svg") no-repeat;
+      width: 16px;
+      height: 12px;
+      margin-left: 10px;
+  }
+
+  &__icon-claw-point {
+      background: url("../img/claw-point.svg") no-repeat;
+      width: 14px;
+      height: 16px;
+      margin-left: 10px;
+  }
+
+  &__icon-games {
+      background: url("../img/game.svg") no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+  }
+
+  &__icon-house {
+      background: url("../img/house.svg") no-repeat;
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+  }
+}

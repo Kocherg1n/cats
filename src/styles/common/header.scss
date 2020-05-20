@@ -1,0 +1,52 @@
+.header {
+    min-height: 76px;
+    padding: 12px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 30;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+
+        @include media-phone {
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        @include media-phone {
+            display: block;
+        }
+    }
+
+    &__fixed {
+        position: fixed;
+        top: 0;
+        animation-name: show__header;
+        animation-duration: 0.5s;
+        background: #ffffff;
+        box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes show__header {
+    0% {
+        opacity: 0;
+        top: -76px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

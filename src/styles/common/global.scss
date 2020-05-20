@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $mainFont;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+button,
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1211px;
+    width: 95%;
+}
+
+.title {
+    font-family: $titleFont;
+    font-weight: 700;
+    font-size: 36px;
+    color: #151b28;
+}

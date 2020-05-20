@@ -1,0 +1,70 @@
+form.filter
+  .filter__name Цена за сутки,₽
+  .filter__inputs
+    input(type='text' name='from' placeholder='от 100').filter__input
+    input(type='text' name='to' placeholder='до 600').filter__input
+  .filter__container
+    .filter__column
+      .filter__name Площадь
+      ul.filter__area-list
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='0,63' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 0,63 м2
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='0,90' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 0,90 м2
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='1,13' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 1,13 м2
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='1,56' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 1,56 м2
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='2,56' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 2,56 м2
+        li.filter__area-item
+          label.filter__label
+            input(type='checkbox' name='2,56' checked).filter__checkbox
+            span.filter__checkbox-icon
+            .filter__checkbox-value 2,56 м2
+    .filter__column
+      .filter__name Оснащение номера
+        ul.filter__equipment-list
+          li.filter__equipment-item
+            label.filter__label
+              input(type='checkbox' name='Пустой номер').filter__checkbox
+              span.filter__checkbox-icon
+              .filter__checkbox-value Пустой номер
+          li.filter__equipment-item
+            label.filter__label
+              input(type='checkbox' name='Лежак' checked).filter__checkbox
+              span.filter__checkbox-icon
+              .filter__checkbox-value Лежак
+          li.filter__equipment-item
+            label.filter__label
+              input(type='checkbox' name='Когтеточка' checked).filter__checkbox
+              span.filter__checkbox-icon
+              .filter__checkbox-value Когтеточка
+          li.filter__equipment-item
+            label.filter__label
+              input(type='checkbox' name='Игровой-комплекс' checked).filter__checkbox
+              span.filter__checkbox-icon
+              .filter__checkbox-value Игровой-комплекс
+          li.filter__equipment-item
+            label.filter__label
+              input(type='checkbox' name='Домик' checked).filter__checkbox
+              span.filter__checkbox-icon
+              .filter__checkbox-value Домик
+  .filter__controls
+    button(type='button').filter__button-apply Применить
+    button(type='button').filter__button-throw-off Сбросить фильтр
